@@ -1,8 +1,8 @@
 import React from 'react';
 import Title from '@/base-components/Title';
-import BlockGraphic from '@/components/HeroSectionComponents/BlockGraphic';
+import BlockGraphic from '@/components/BlockGraphic';
 import Wall from '../../../../public/assets/svg/Wall-of-blocks.svg';
-import ToppledBlocks from '@/components/HeroSectionComponents/ToppledBlocks';
+import ToppledBlocks from '@/components/ToppledBlocks';
 
 const MarkupSection: React.FC = () => {
 

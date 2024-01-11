@@ -1,7 +1,7 @@
 import React from 'react';
 import Title from '@/base-components/Title';
-import HeroGraphic from '@/components/HeroSectionComponents/HeroGraphic';
-import MouseLine from '@/components/HeroSectionComponents/MouseLine';
+import HeroGraphic from '@/components/HeroGraphic';
+import MouseLine from '@/components/MouseLine';
 
 const HeroSection: React.FC = () => {
   return (

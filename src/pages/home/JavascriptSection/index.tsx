@@ -3,7 +3,7 @@ import RetroComputer from '../../../../public/assets/svg/computer.svg';
 import Arrow from '../../../../public/assets/svg/squiggly-arrow.svg';
 import Lines from '@/base-components/BackgroundLines';
 import Square from '../../../../public/assets/svg/Orange-square.svg'
-import TypingAnimation from '@/components/HeroSectionComponents/TypingAnimation';
+import TypingAnimation from '@/components/TypingAnimation';
 
 const JavascriptSection: React.FC = () => {
   return (
