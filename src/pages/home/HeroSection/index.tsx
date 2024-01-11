@@ -1,12 +1,12 @@
 import React from 'react';
 import Title from '@/base-components/Title';
-import RectangleGroup from '@/components/HeroSectionComponents/RectangleGroup';
+import HeroGraphic from '@/components/HeroSectionComponents/HeroGraphic';
 import MouseLine from '@/components/HeroSectionComponents/MouseLine';
 
 const HeroSection: React.FC = () => {
   return (
     <section className="pt-60 pb-240 flex justify-center lg:justify-start relative xl:container px-8 mx-auto">
-          <RectangleGroup />
+          <HeroGraphic />
       <div className="flex flex-col gap-16 z-10">
         <div className="flex gap-[1rem] lg:gap-11 flex-col lg:flex-row items-center lg:items-start">
           <Title Tag="h1" Text="jamstack" />

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import useScrollAnimation from '@/hooks/useScrollAnimation';
 
-const RectangleGroup = () => {
+const HeroGraphic = () => {
   const rectangle24Y = useScrollAnimation(485, 0.5);
   const rectangle25Y = useScrollAnimation(302, 0.8);
 
@@ -51,4 +51,4 @@ const RectangleGroup = () => {
   );
 };
 
-export default RectangleGroup;
+export default HeroGraphic;
