@@ -3,6 +3,7 @@ import RetroComputer from '../../../../public/assets/svg/computer.svg';
 import Arrow from '../../../../public/assets/svg/squiggly-arrow.svg';
 import Lines from '@/base-components/BackgroundLines';
 import Square from '../../../../public/assets/svg/Orange-square.svg'
+import TypingAnimation from '@/components/HeroSectionComponents/TypingAnimation';
 
 const JavascriptSection: React.FC = () => {
   return (
@@ -20,7 +21,10 @@ const JavascriptSection: React.FC = () => {
           Statically generated pages are brought to life with client-side JavaScript libraries and frameworks, 
           such as Algolia and Next.js.
         </p>
-        <RetroComputer className="md:mx-32 lg:mx-40 xl:mx-68 2xl:mx-104" />
+          <RetroComputer className="md:mx-32 lg:mx-40 xl:mx-68 2xl:mx-104" />
+          <div className="absolute top-72 md:top-48 lg:top-30 xl:top-36 2xl:top-28 left-0 w-full h-full flex items-center justify-center p-4">
+          <TypingAnimation />
+          </div>
       </div>
     </section>
   );

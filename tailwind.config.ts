@@ -10,15 +10,6 @@ const config: Config = {
     fontFamily: {
       sans: ['Inter', 'sans-serif'],
     },
-    container: {
-      screens: {
-        'sm': '480px',
-        'md': '768px',
-        'lg': '1024px',
-        'xl': '1280px',
-        '2xl': '1536px',
-      }
-    },
     spacing: {
       px: '1px',
       0: '0',
@@ -42,6 +33,7 @@ const config: Config = {
       16: '4rem',
       20: '5rem',
       24: '6rem',
+      26: '6.5rem',
       28: '7rem',
       32: '8rem',
       36: '9rem',
@@ -61,6 +53,7 @@ const config: Config = {
       130: '32.5rem',
       168: '42rem',
       170: '44rem',
+      180: '45rem',
       192: '48rem',
       240: '60rem',
       276: '69rem',
@@ -83,6 +76,7 @@ const config: Config = {
       'greyLight': "#757575",
       'greyMedium': "#414141",
       'greyDark': "#151515",
+      'commandLine': "#59CDFF",
       'blockBlue': "#0165b1",
       'blockYellow': "#fec05c",
       'blockRed': "#d12510",
@@ -90,6 +84,11 @@ const config: Config = {
       'greyLine': "#E8E8E8"
     },
     fontSize: {
+      's': '0.3rem',
+      'sm': '0.5rem',
+      'md': '0.65rem',
+      'lg': '0.9rem',
+      'xl': '1rem',
       'base': '1.8rem',
       '7xl': '5.5rem',
       '8xl': '7.6rem',
@@ -119,6 +118,16 @@ const config: Config = {
       '6': '6px',
     },
     extend: {
+      container: {
+        screens: {
+          's': '308px',
+          'sm': '480px',
+          'md': '768px',
+          'lg': '1024px',
+          'xl': '1280px',
+          '2xl': '1536px',
+        }
+      },
       dropShadow: {
         'white': [
             '0 0 30px rgba(255, 255, 255, 0.58)',

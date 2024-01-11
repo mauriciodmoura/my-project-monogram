@@ -38,3 +38,4 @@ const MarkupSection: React.FC = () => {
   };
 
 export default MarkupSection;
+
