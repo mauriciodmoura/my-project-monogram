@@ -1,0 +1,55 @@
+@keyframes dash {
+  from {
+    stroke-dashoffset: 1000;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes beat{
+	to { transform: scale(1.2); }
+}
+
+// As I needed to create a class in order to use border-image-source, I did not find necessary to use only Tailwind utility class. That's why there is this border or this mix-blend-mode attributes.
+.card {
+  background: linear-gradient(25.39deg, rgba(255, 255, 255, 0.024) 18.54%, rgba(123, 245, 93, 0.108) 62.25%);
+  border: 1px solid;
+  border-image-source: radial-gradient(65.6% 145.73% at 90.52% 2.09%, rgba(255, 255, 255, 0.3) 2.08%, rgba(255, 255, 255, 0) 53.65%, rgba(123, 245, 93, 0.135) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  backdrop-filter: blur(120px);
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+  mix-blend-mode: normal;
+}
+
+// Did not use a .module in order to be able to add the ".active" class for the animation from JS.
+.score {
+  filter: drop-shadow(0px 0px 100px #7BF55D);
+
+  &__item {
+    p {
+      color: #EFFFE2;
+      text-shadow: 0px 0px 12px #53FB2A, 0px 0px 42px #E9E11F, 0px 0px 61px #53FB2A;
+    }
+
+    path {
+      stroke-dasharray: 1000;
+      stroke-dashoffset: 1000;
+      animation: dash 5s forwards ease-out paused;
+    }
+
+    &.active {
+       path {
+          animation-play-state: running;
+       }
+    } 
+  }
+}
+
+.heart {
+  animation: beat .25s infinite alternate paused;
+	transform-origin: center;
+
+  &:hover {
+    animation-play-state: running;
+  }
+}
