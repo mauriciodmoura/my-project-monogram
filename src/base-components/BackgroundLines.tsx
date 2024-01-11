@@ -22,7 +22,7 @@ const BackgroundLines: React.FC = () => {
           <Image src="/assets/svg/line.svg" alt="Line" layout="fill" objectFit="cover" />
         </div>
         {/* last line */}
-        <div className="absolute h-full" style={{ width: '2px', right: '5%' }}>
+        <div className="absolute h-full" style={{ width: '2px', left: '1580px' }}>
           <Image src="/assets/svg/line.svg" alt="Line" layout="fill" objectFit="cover" />
         </div>
         {/* spacer for responsive design */}

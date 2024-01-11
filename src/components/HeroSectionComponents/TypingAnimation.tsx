@@ -53,7 +53,7 @@ const TypingAnimation: React.FC = () => {
   }, [typing]);
 
   return (
-    <pre className="text-commandLine overflow-hidden bg-black p-4 rounded-lg font-mono text-left text-s sm:text-md md:text-md lg:text-lg xl:text-xl whitespace-pre-wrap">
+    <pre className="text-commandLine overflow-hidden bg-black rounded-lg font-mono text-left text-s sm:text-md md:text-md lg:text-lg xl:text-xl whitespace-pre-wrap">
       {text}
     </pre>
   );

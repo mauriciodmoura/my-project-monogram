@@ -9,7 +9,7 @@ const MarkupSection: React.FC = () => {
     return (
       <section className="flex flex-col items-center relative">
             <BlockGraphic />
-        <div className="flex justify-center md:justify-start xl:container w-full px-24 mx-auto relative">
+        <div className="flex justify-center lg:justify-start xl:container w-full px-24 mx-auto relative">
           <div className="flex flex-col items-center lg:items-start gap-16">
             <div className="flex gap-11">
               <Title Tag="h1" Text="markup" />

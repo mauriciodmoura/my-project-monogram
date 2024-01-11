@@ -10,7 +10,7 @@ const HeroGraphic = () => {
       <div className="relative h-[964px]">
         {/* Rectangle 22 */}
         <Image
-          className="absolute mt-0 ml-130"
+          className="absolute mt-0 ml-130 blur-xs"
           src="/assets/svg/Rectangle-22.svg"
           alt="Rectangle 22"
           width={278}
@@ -19,7 +19,7 @@ const HeroGraphic = () => {
         />
         {/* Rectangle 23 */}
         <Image
-          className="absolute mt-68 ml-0"
+          className="absolute mt-68 ml-0 blur-xs"
           src="/assets/svg/Rectangle-23.svg"
           alt="Rectangle 23"
           width={280}
