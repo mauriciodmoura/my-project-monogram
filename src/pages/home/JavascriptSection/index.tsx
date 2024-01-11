@@ -21,9 +21,13 @@ const JavascriptSection: React.FC = () => {
           Statically generated pages are brought to life with client-side JavaScript libraries and frameworks, 
           such as Algolia and Next.js.
         </p>
-          <RetroComputer className="md:mx-32 lg:mx-40 xl:mx-68 2xl:mx-104" />
-          <div className="absolute top-72 md:top-48 lg:top-30 xl:top-36 2xl:top-28 left-0 w-full h-full flex items-center justify-center p-4">
-          <TypingAnimation />
+          <RetroComputer className="mx-0 md:mx-32 lg:mx-40 xl:mx-68 2xl:mx-104" />
+          <div className="absolute top-76 md:top-48 lg:top-41 xl:top-36 2xl:top-28 w-full h-full flex items-center justify-center">
+            <div className="absolute rounded-lg p-4 z-0">
+              <div className="bg-commandScreen rounded w-full h-full">
+                <TypingAnimation />
+              </div>
+            </div>
           </div>
       </div>
     </section>

@@ -35,9 +35,11 @@ const config: Config = {
       24: '6rem',
       26: '6.5rem',
       28: '7rem',
+      30: '8.5rem',
       32: '8rem',
       36: '9rem',
       40: '10rem',
+      41: '10.25rem',
       44: '11rem',
       48: '12rem',
       52: '13rem',
@@ -46,6 +48,7 @@ const config: Config = {
       64: '16rem',
       68: '17rem',
       72: '18rem',
+      76: '19rem',
       80: '20rem',
       96: '24rem',
       104: '26rem',
@@ -76,6 +79,7 @@ const config: Config = {
       'greyLight': "#757575",
       'greyMedium': "#414141",
       'greyDark': "#151515",
+      'commandScreen': "#1A1A1A",
       'commandLine': "#59CDFF",
       'blockBlue': "#0165b1",
       'blockYellow': "#fec05c",
@@ -108,6 +112,9 @@ const config: Config = {
     lineHeight: {
       'base': "3.5rem",
       'title': "15rem",
+    },
+    borderRadius: {
+      DEFAULT: '14px',
     },
     borderWidth: {
       DEFAULT: '1px',
