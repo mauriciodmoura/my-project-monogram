@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const BlockGraphic = () => {
   return (
-    <div className="absolute w-[764px] h-[964px] mt-8 lg:ml-276 opacity-20 lg:opacity-100 z-0">
+    <div className="absolute w-[764px] h-[964px] mt-8 lg:ml-280 opacity-20 lg:opacity-100 z-0">
       <div className="relative h-[964px]">
         {/* Rectangle 22 */}
           <Image

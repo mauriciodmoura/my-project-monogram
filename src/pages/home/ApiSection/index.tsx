@@ -8,7 +8,7 @@ const ApiSection: React.FC = () => {
     <section className="flex flex-col items-center relative bg-greyDark mb-[18rem]">
       <Lines />
       <div className="z-10">
-        <Title Tag="h2" Text="api" className="text-white text-center" />
+        <Title Tag="h2" Text="api" className="text-white text-center lg:-tracking-h1" />
         <p className="mx-auto px-[6rem] lg:px-0 mt-[6rem] mb-[9.6rem] text-base text-center max-w-[55rem] font-light text-white leading-base">
           At build time, a Jamstack website uses data from one or more APIs to generate markup. 
           These APIs can be a headless CMS like Prismic, a database like Supabase, or even a local JSON file!

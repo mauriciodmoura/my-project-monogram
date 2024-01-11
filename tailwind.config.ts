@@ -64,11 +64,14 @@ const config: Config = {
       192: '48rem',
       240: '60rem',
       276: '69rem',
+      280: '90rem',
       384: '96rem',
       432: '108rem',
     },
     letterSpacing: {
       'h1': '5px',
+      'h2': '1px',
+      'p': '2px',
     },
     colors: {
       'white': "#fff",
@@ -76,11 +79,13 @@ const config: Config = {
       'violet': "#cb77a0",
       'violetLight': '#b75a9b',
       'yellow': "#fcde8e",
+      'greySoft': "#C7C7C7",
       'greyLight': "#757575",
+      'greyMedium': "#414141",
       'greyDark': "#151515",
-      'blocBlue': "#0165b1",
-      'blocYellow': "#fec05c",
-      'blocRed': "#d12510",
+      'blockBlue': "#0165b1",
+      'blockYellow': "#fec05c",
+      'blockRed': "#d12510",
       'greenLight': "#EFFFE2",
       'greyLine': "#E8E8E8"
     },
@@ -90,9 +95,20 @@ const config: Config = {
       '8xl': '7.6rem',
       '9xl': '13rem',
     },
+    fontWeight: {
+      hairline: '100',
+      extralight: '200',
+      light: '300',
+      normal: '400',
+      medium: '500',
+      semibold: '600',
+      bold: '700',
+      'extra-bold': '800',
+      black: '900',
+    },
     lineHeight: {
       'base': "3.5rem",
-      'title': "15rem"
+      'title': "15rem",
     },
     borderWidth: {
       DEFAULT: '1px',

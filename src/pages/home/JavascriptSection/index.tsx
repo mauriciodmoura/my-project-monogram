@@ -15,7 +15,7 @@ const JavascriptSection: React.FC = () => {
           <Arrow className="absolute mt-104 ml-384" />
         </div>
       <div className="pt-32 flex flex-col items-center relative">
-        <Title Tag="h2" Text="javascript" className="text-white tracking-[-0.039rem]" />
+        <Title Tag="h2" Text="javascript" className="text-white lg:-tracking-h1" />
         <p className="text-base font-light text-white leading-base max-w-[57.8rem] mt-[4.4rem] mb-[9rem]">
           Statically generated pages are brought to life with client-side JavaScript libraries and frameworks, 
           such as Algolia and Next.js.
