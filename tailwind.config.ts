@@ -11,6 +11,8 @@ const config: Config = {
       sans: ['Inter', 'sans-serif'],
     },
     screens: {
+      's': '370px',
+      'sx': '480px',
       'sm': '640px',
       'md': '768px',
       'lg': '1024px',
@@ -58,6 +60,7 @@ const config: Config = {
       76: '19rem',
       80: '20rem',
       92: '22rem',
+      94: '23.75rem',
       96: '24rem',
       100: '25rem',
       104: '26rem',

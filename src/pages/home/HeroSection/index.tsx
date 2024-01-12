@@ -18,8 +18,8 @@ const HeroSection: React.FC = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue massa, 
           tincidunt proin nunc viverra tristique tempor, 
           ipsum. At lectus vel pretium tempor ut dui vivamus sit.
-        </p>
           <MouseLine />
+        </p>
       </div>
     </section>
   );
