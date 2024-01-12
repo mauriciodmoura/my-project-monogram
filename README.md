@@ -16,8 +16,8 @@ This repository contains the code for the Monogram Exercise, a project showcasin
 - **Interactive 3D Elements**: Utilizing Three.js to add interactive 3D elements, enhancing user engagement.
 
 
-## License
+## Copyright
 
-This project is licensed under the Monogram.
+Design is property of Monogram
 
 [![Linkedin Badge](https://img.shields.io/badge/Mauricio%20de%20Moura-%230A66C2?logo=LinkedIn&logoColor=white&link=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmauriciomdemoura%2F)](https://www.linkedin.com/in/mauriciomdemoura/) 
