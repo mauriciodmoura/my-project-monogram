@@ -7,7 +7,7 @@ import ToppledBlocks from '@/components/ToppledBlocks';
 const MarkupSection: React.FC = () => {
 
     return (
-      <section className="flex flex-col items-center relative">
+      <section className="flex flex-col items-center relative z-0">
             <BlockGraphic />
         <div className="flex justify-center lg:justify-start xl:container w-full px-24 mx-auto relative">
           <div className="flex flex-col items-center lg:items-start gap-16">

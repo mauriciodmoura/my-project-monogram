@@ -19,9 +19,8 @@ const ApiSection: React.FC = () => {
             <div className="w-full h-full flex items-center justify-center bg-sphere-gradient rounded-[100%] absolute top-0 z-20 overflow-hidden">
               <Sphere3D />
             </div>
-          <div className="w-full h-full bg-white rounded-[100%] blur-[100px] -translate-x-12 -translate-y-12"></div>
-
-            <div className="w-screen h-auto absolute left-2/4 top-2/4 bottom-0 z-10 mx-auto -translate-x-2/4">
+          <div className="w-full h-full bg-sphereTwo rounded-[100%] blur-[200px] -translate-x-12 -translate-y-12 z-0"></div>
+            <div className="w-screen h-auto absolute left-2/4 top-2/4 bottom-0 -z-10 mx-auto -translate-x-2/4">
               <div className="relative w-full h-full">
                 <Splitter className="absolute -translate-y-[99%]" />
                 <div className="w-full h-full bg-white"></div>
