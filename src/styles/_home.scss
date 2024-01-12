@@ -44,12 +44,3 @@
     } 
   }
 }
-
-.heart {
-  animation: beat .25s infinite alternate paused;
-	transform-origin: center;
-
-  &:hover {
-    animation-play-state: running;
-  }
-}

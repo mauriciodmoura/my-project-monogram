@@ -10,7 +10,7 @@ const Footer: React.FC = () => {
         <p className="text-white px-[6rem] text-[1.5rem] lg:text-[2.4rem] text-center">
           This is a design test by Maurício de Moura for Monogram.
         </p>
-        <Heart className="heart" />
+        <Heart className="heart animate-pulse" />
       </div>
     </section>
   );

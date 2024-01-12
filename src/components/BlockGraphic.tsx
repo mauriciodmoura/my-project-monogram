@@ -25,7 +25,7 @@ const BlockGraphic = () => {
         {/* Rectangle 24 */}
           <Image
             className="absolute mt-192 ml-64"
-            src="/assets/svg/Rectangle-24.svg"
+            src="/assets/img/Rectangle-24.png"
             alt="Rectangle 24"
             width={280}
             height={479}
@@ -34,7 +34,7 @@ const BlockGraphic = () => {
         {/* Rectangle 25 */}
           <Image
             className="absolute mt-130 ml-192"
-            src="/assets/svg/Rectangle-25.svg"
+            src="/assets/img/Rectangle-25.png"
             alt="Rectangle 25"
             width={280}
             height={662}

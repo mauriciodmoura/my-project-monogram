@@ -57,6 +57,7 @@ const config: Config = {
       72: '18rem',
       76: '19rem',
       80: '20rem',
+      92: '22rem',
       96: '24rem',
       100: '25rem',
       104: '26rem',
@@ -96,10 +97,14 @@ const config: Config = {
       'blockYellow': "#fec05c",
       'blockRed': "#d12510",
       'greenLight': "#EFFFE2",
-      'greyLine': "#E8E8E8"
+      'greyLine': "#E8E8E8",
+      'sphereOne': "#01A6DC",
+      'sphereTwo': "#8801E4",
+      'sphereThree': "#F5CBE1"
     },
     fontSize: {
       's': '0.3rem',
+      'sx': '0.4rem',
       'sm': '0.5rem',
       'md': '0.65rem',
       'lg': '0.9rem',
@@ -125,7 +130,7 @@ const config: Config = {
       'title': "15rem",
     },
     borderRadius: {
-      DEFAULT: '14px',
+      DEFAULT: '34px',
     },
     borderWidth: {
       DEFAULT: '1px',

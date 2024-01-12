@@ -2,6 +2,7 @@ import React from 'react';
 import Title from '@/base-components/Title';
 import Lines from '@/base-components/BackgroundLines';
 import Splitter from '../../../../public/assets/svg/api-section-splitter.svg'
+import Sphere3D from '@/components/Sphere3D';
 
 const ApiSection: React.FC = () => {
   return (
@@ -16,14 +17,10 @@ const ApiSection: React.FC = () => {
         <div>
           <div className="w-[80vw] max-w-[91rem] h-[80vw] max-h-[91rem] relative mx-auto">
             <div className="w-full h-full flex items-center justify-center bg-sphere-gradient rounded-[100%] absolute top-0 z-20 overflow-hidden">
-              <div className="w-full min-w-[110%] h-full flex gap-[4rem] items-center justify-between rotate-[-27.91deg] mix-blend-color-dodge">
-              {/*  <Prismic className="w-[20%] max-w-[20rem]" />
-                <Supabase className="w-[50%] max-w-[37rem]" />
-                <Prismic className="w-[20%] max-w-[20rem]" /> */}
-              </div>
+              <Sphere3D />
             </div>
-            <div className="w-full h-full bg-white rounded-[100%] blur-[100px] -translate-x-12 -translate-y-12"></div>
-            
+          <div className="w-full h-full bg-white rounded-[100%] blur-[100px] -translate-x-12 -translate-y-12"></div>
+
             <div className="w-screen h-auto absolute left-2/4 top-2/4 bottom-0 z-10 mx-auto -translate-x-2/4">
               <div className="relative w-full h-full">
                 <Splitter className="absolute -translate-y-[99%]" />

@@ -1,5 +1,5 @@
+import Image from 'next/image';
 import Title from '@/base-components/Title';
-import RetroComputer from '../../../../public/assets/svg/computer.svg';
 import Arrow from '../../../../public/assets/svg/squiggly-arrow.svg';
 import Lines from '@/base-components/BackgroundLines';
 import Square from '../../../../public/assets/svg/Orange-square.svg'
@@ -7,7 +7,7 @@ import TypingAnimation from '@/components/TypingAnimation';
 
 const JavascriptSection: React.FC = () => {
   return (
-    <section className="mt-0 text-center relative xl:container px-24 mx-auto z-10 bg-greyDark md:bg-[transparent] py-10 md:py-0">
+    <section className="mt-0 text-center relative xl:container px-24 mx-auto z-20 bg-greyDark md:bg-[transparent] py-10 md:py-0">
       <div className="bg-greyDark absolute w-[100vw] h-[75%] xl:h-[55%] lg:max-h-[55rem] bottom-0 left-2/4 -translate-x-2/4">
         <Lines />
         </div>
@@ -21,13 +21,18 @@ const JavascriptSection: React.FC = () => {
           Statically generated pages are brought to life with client-side JavaScript libraries and frameworks, 
           such as Algolia and Next.js.
         </p>
-          <RetroComputer className="mx-0 md:mx-32 lg:mx-40 xl:mx-68 2xl:mx-104" />
-          <div className="absolute top-76 md:top-48 lg:top-41 xl:top-36 2xl:top-28 w-full h-full flex items-center justify-center">
-            <div className="absolute rounded-lg p-4 z-0">
-              <div className="bg-commandScreen rounded w-full h-full p-4">
-                <TypingAnimation />
-              </div>
-            </div>
+        <div className="z-10">
+          <Image
+            className="relative"
+            src="/assets/img/computer.png"
+            alt="retroComputer"
+            width={810}
+            height={808}
+            layout="fixed"
+          />
+        </div>
+          <div className="absolute z-0 xl:top-36 2xl:top-28 w-full h-full flex items-center justify-center">
+            <TypingAnimation />
           </div>
       </div>
     </section>
