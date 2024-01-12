@@ -44,7 +44,7 @@ const TypingAnimation: React.FC = () => {
             clearInterval(timer);
             return currentText;
           }
-          return fullText.slice(0, currentText.length + 5);
+          return fullText.slice(0, currentText.length + 1);
         });
       }, 50);
     }
