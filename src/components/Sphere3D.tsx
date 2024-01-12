@@ -4,18 +4,18 @@ import * as THREE from 'three';
 
 const RotatingSphere = () => {
   const sphereRef = useRef<THREE.Mesh>(null);
-  const texture = useLoader(THREE.TextureLoader, '../assets/img/circle.png');
+  const texture = useLoader(THREE.TextureLoader, '../assets/img/circle-layer.png');
 
   useFrame(() => {
     if (sphereRef.current) {
+      sphereRef.current.rotation.x += 0.0;
       sphereRef.current.rotation.y += 0.01;
-      sphereRef.current.rotation.x += 0;
     }
   });
 
   return (
     <mesh ref={sphereRef}>
-      <sphereGeometry args={[3, 64, 64]} />
+      <sphereGeometry args={[3.037, 64, 64]} />
       <meshStandardMaterial map={texture} />
     </mesh>
   );

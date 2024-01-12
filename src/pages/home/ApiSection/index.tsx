@@ -1,6 +1,6 @@
 import React from 'react';
-import Title from '@/base-components/Title';
-import Lines from '@/base-components/BackgroundLines';
+import Title from '@/components/Title';
+import Lines from '@/components/BackgroundLines';
 import Splitter from '../../../../public/assets/svg/api-section-splitter.svg'
 import Sphere3D from '@/components/Sphere3D';
 

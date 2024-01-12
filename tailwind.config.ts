@@ -131,6 +131,7 @@ const config: Config = {
     },
     borderRadius: {
       DEFAULT: '34px',
+      lg: '7px',
     },
     borderWidth: {
       DEFAULT: '1px',

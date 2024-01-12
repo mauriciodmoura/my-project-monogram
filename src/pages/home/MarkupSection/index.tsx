@@ -1,5 +1,5 @@
 import React from 'react';
-import Title from '@/base-components/Title';
+import Title from '@/components/Title';
 import BlockGraphic from '@/components/BlockGraphic';
 import Wall from '../../../../public/assets/svg/Wall-of-blocks.svg';
 import ToppledBlocks from '@/components/ToppledBlocks';

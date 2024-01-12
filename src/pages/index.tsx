@@ -9,7 +9,7 @@ import Footer from '@/pages/home/Footer';
 
 const Home = () => {
     return (
-        <div>
+        <>
             <Head>
                 <title>Monogram Exercise-III</title>
                 <meta name="description" content="Monogram Exercise-III" />
@@ -24,7 +24,7 @@ const Home = () => {
                 <ScoresSection />
                 <Footer />
             </main>
-        </div>
+        </>
     );
   };
   

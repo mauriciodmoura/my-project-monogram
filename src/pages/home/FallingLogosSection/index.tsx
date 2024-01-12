@@ -1,5 +1,5 @@
 import React from 'react';
-import Lines from '@/base-components/BackgroundLines';
+import Lines from '@/components/BackgroundLines';
 import ReactIcon from '../../../../public/assets/svg/react.svg';
 import SvelteIcon from '../../../../public/assets/svg/svelte.svg';
 import NextIcon from '../../../../public/assets/svg/next.svg';
@@ -7,7 +7,7 @@ import VueIcon from '../../../../public/assets/svg/vue.svg';
 
 const FallingLogosSection: React.FC = () => {
   return (
-    <section className="bg-greyDark my-0 pb-[1rem] relative z-10">
+    <section className="bg-greyDark my-0 pb-[1rem] relative z-30">
       <Lines />
       <div className="grid grid-cols-4 justify-center h-full max-w-[128rem] mx-auto">
         <div className="flex flex-col items-center pt-[7.5rem] md:pt-[25rem]">

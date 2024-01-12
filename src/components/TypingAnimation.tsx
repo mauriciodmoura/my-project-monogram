@@ -44,7 +44,7 @@ const TypingAnimation: React.FC = () => {
             clearInterval(timer);
             return currentText;
           }
-          return fullText.slice(0, currentText.length + 1);
+          return fullText.slice(0, currentText.length + 5);
         });
       }, 50);
     }
@@ -53,9 +53,9 @@ const TypingAnimation: React.FC = () => {
   }, [typing]);
 
   return (
-    <div className="absolute rounded-lg p-4 z-0">
-      <div className="bg-commandScreen rounded w-full h-full mt-76 sm:mt-44 md:mt-18 lg:mt-0 xl:mt-0 px-6 py-4 sm:px-22 sm:py-12 md:px-18 md:py-10 lg:px-26 lg:py-20">
-        <pre className="text-commandLine overflow-hidden bg-black rounded-lg font-mono text-left text-sx sm:text-md md:text-lg lg:text-lg xl:text-xl whitespace-pre-wrap">
+    <div className="absolute p-4 z-0">
+      <div className="bg-commandScreen rounded-lg sm:rounded w-full h-full p-2 sm:p-8">
+        <pre className="text-commandLine overflow-hidden bg-black rounded-lg font-mono text-left text-sx sm:text-md md:text-md lg:text-lg xl:text-xl md:min-h-[340px] md:min-w-[490px] lg:min-h-[420px] lg:min-w-[620px]">
           {text}
         </pre>
       </div>

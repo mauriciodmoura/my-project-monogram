@@ -1,5 +1,5 @@
 import React from 'react';
-import Title from '@/base-components/Title';
+import Title from '@/components/Title';
 import HeroGraphic from '@/components/HeroGraphic';
 import MouseLine from '@/components/MouseLine';
 

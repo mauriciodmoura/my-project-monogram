@@ -7,11 +7,6 @@
   }
 }
 
-@keyframes beat{
-	to { transform: scale(1.2); }
-}
-
-// As I needed to create a class in order to use border-image-source, I did not find necessary to use only Tailwind utility class. That's why there is this border or this mix-blend-mode attributes.
 .card {
   background: linear-gradient(25.39deg, rgba(255, 255, 255, 0.024) 18.54%, rgba(123, 245, 93, 0.108) 62.25%);
   border: 1px solid;
@@ -21,7 +16,6 @@
   mix-blend-mode: normal;
 }
 
-// Did not use a .module in order to be able to add the ".active" class for the animation from JS.
 .score {
   filter: drop-shadow(0px 0px 100px #7BF55D);
 

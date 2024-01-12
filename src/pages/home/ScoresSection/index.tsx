@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import ScoreIndicator from '../../../../public/assets/svg/score.svg';
-import Lines from '@/base-components/BackgroundLines';
+import Lines from '@/components/BackgroundLines';
 
 const ScoresSection: React.FC = () => {
 

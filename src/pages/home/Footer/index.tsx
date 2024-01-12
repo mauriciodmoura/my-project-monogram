@@ -1,6 +1,6 @@
 import React from 'react';
 import Heart from '../../../../public/assets/svg/heart.svg';
-import Lines from '@/base-components/BackgroundLines';
+import Lines from '@/components/BackgroundLines';
 
 const Footer: React.FC = () => {
   return (
