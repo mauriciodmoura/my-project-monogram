@@ -17,7 +17,7 @@ const MouseLine: React.FC = () => {
           height={36}
         />
       </div>
-      <div className="absolute xl:ml-96 sm:ml-96 ml-94">
+      <div className="relative -mt-6 ml-100">
         <Image
           src="/assets/svg/mouse-line.svg"
           alt="Line"

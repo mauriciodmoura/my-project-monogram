@@ -5,7 +5,7 @@ import MouseLine from '@/components/MouseLine';
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="pt-60 pb-240 flex justify-center lg:justify-start relative xl:container px-8 mx-auto">
+    <section className="pt-60 pb-24 flex justify-center lg:justify-start relative xl:container px-8 mx-auto">
           <HeroGraphic />
       <div className="flex flex-col gap-16 z-10">
         <div className="flex gap-[1rem] lg:-tracking-h1 lg:gap-11 flex-col lg:flex-row items-center lg:items-start">
@@ -18,8 +18,8 @@ const HeroSection: React.FC = () => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu augue massa, 
           tincidunt proin nunc viverra tristique tempor, 
           ipsum. At lectus vel pretium tempor ut dui vivamus sit.
-          <MouseLine />
         </p>
+          <MouseLine />
       </div>
     </section>
   );
