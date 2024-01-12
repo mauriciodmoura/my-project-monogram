@@ -31,7 +31,7 @@ const TypingAnimation: React.FC = () => {
 
   const [text, setText] = useState('');
   const [typing, setTyping] = useState(true);
-  const index = useRef(0);
+  const index = useRef(10);
 
   useEffect(() => {
     let timer: NodeJS.Timeout;
@@ -50,7 +50,7 @@ const TypingAnimation: React.FC = () => {
     }
 
     return () => clearInterval(timer);
-  }, [typing]);
+  }, [fullText, typing]);
 
   return (
     <div className="absolute p-4 z-0">

@@ -1,8 +1,6 @@
-// Globals import
-@use './globals/fonts';
+@use './home';
 
-// Sections-related styles
-@use './globals/home';
+@import url('https://rsms.me/inter/inter.css');
 
 @tailwind base;
 @tailwind components;
