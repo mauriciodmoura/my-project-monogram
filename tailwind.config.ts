@@ -106,10 +106,11 @@ const config: Config = {
       'sphereThree': "#F5CBE1"
     },
     fontSize: {
-      's': '0.3rem',
+      's': '0.38rem',
       'sx': '0.4rem',
       'sm': '0.5rem',
       'md': '0.65rem',
+      'm': '0.75rem',
       'lg': '0.9rem',
       'xl': '1rem',
       'base': '1.8rem',

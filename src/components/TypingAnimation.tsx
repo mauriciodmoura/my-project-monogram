@@ -53,9 +53,9 @@ const TypingAnimation: React.FC = () => {
   }, [fullText, typing]);
 
   return (
-    <div className="absolute p-4 z-0">
+    <div className="relative p-4 z-0">
       <div className="bg-commandScreen rounded-lg sm:rounded w-full h-full p-2 sm:p-8">
-        <pre className="text-commandLine overflow-hidden bg-black rounded-lg font-mono text-left text-sx sm:text-md md:text-md lg:text-lg xl:text-xl md:min-h-[340px] md:min-w-[490px] lg:min-h-[420px] lg:min-w-[620px]">
+        <pre className="text-commandLine overflow-hidden sm:p-5 md:px-16 lg:px-8 bg-black rounded-lg font-mono text-left text-s sm:text-md md:text-m lg:text-lg xl:text-xl md:min-h-[340px] md:min-w-[490px] lg:min-h-[420px] lg:min-w-[620px]">
           {text}
         </pre>
       </div>
