@@ -1,18 +1,39 @@
-import useScrollEffect from '@/hooks/useScrollEffect';
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const ToppledBlocks: React.FC = () => {
-  const { ref, scrollEffect } = useScrollEffect();
+  const ref = useRef<HTMLDivElement>(null);
+  const [scrollEffect, setScrollEffect] = useState(0);
 
-  const blueBlockTransform = `translate(${(1 - scrollEffect) * 10}px, ${(1 - scrollEffect) * 10}px) rotate(${(1 - scrollEffect) * -16.91}deg)`;
-  const redBlockTransform = `translate(${(1 - scrollEffect) * 10}px, ${(1 - scrollEffect) * 10}px) rotate(${(1 - scrollEffect) * 14.16}deg)`;
-  const yellowBlockTransform = `translate(${(1 - scrollEffect) * 10}px, ${(1 - scrollEffect) * 10}px) rotate(${(1 - scrollEffect) * -58.55}deg)`;
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const entry = entries[0];
+        setScrollEffect(entry.isIntersecting ? 1 : 10);
+      },
+      { threshold: 0.1 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, []);
+
+  const blueBlockTransform = `rotate(${scrollEffect * -16.91}deg)`;
+  const redBlockTransform = `rotate(${scrollEffect * 14.16}deg)`;
+  const yellowBlockTransform = `rotate(${scrollEffect * -58.55}deg)`;
 
   return (
-    <div ref={ref} className="relative w-full mt-[8rem] h-[50rem] z-10">
-      <div className="absolute w-[32rem] h-[5.7rem] rounded-lg bg-blockBlue left-[13rem] transition-transform duration-500" style={{ transform: blueBlockTransform }}></div>
-      <div className="absolute w-[32rem] h-[5.7rem] rounded-lg bg-blockRed left-[-5.8rem] top-[20rem] transition-transform duration-500" style={{ transform: redBlockTransform }}></div>
-      <div className="absolute w-[32rem] h-[5.7rem] rounded-lg bg-blockYellow right-[-10rem] top-[25rem] transition-transform duration-500" style={{ transform: yellowBlockTransform }}></div>
+    <div ref={ref} className="relative w-full mt-32 h-100 sm:h-200 z-10">
+      {/* Blocks */}
+      <div className="absolute w-64 h-11 sm:w-128 sm:h-22 rounded-md sm:rounded-lg bg-blockBlue left-26 sm:left-52 transition-transform duration-500" style={{ transform: blueBlockTransform }}></div>
+      <div className="absolute w-64 h-11 sm:w-128 sm:h-22 rounded-md sm:rounded-lg bg-blockRed -left-12 sm:-left-23 top-40 sm:top-80 transition-transform duration-500" style={{ transform: redBlockTransform }}></div>
+      <div className="absolute w-64 h-11 sm:w-128 sm:h-22 rounded-md sm:rounded-lg bg-blockYellow left-60 sm:left-120 top-48 sm:top-100 transition-transform duration-500" style={{ transform: yellowBlockTransform }}></div>
     </div>
   );
 };

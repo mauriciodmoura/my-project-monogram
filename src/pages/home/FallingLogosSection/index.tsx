@@ -10,6 +10,7 @@ const FallingLogosSection: React.FC = () => {
     <section className="bg-greyDark my-0 pb-[1rem] relative z-30">
       <Lines />
       <div className="grid grid-cols-4 justify-center h-full max-w-[128rem] mx-auto">
+        {/* Logos: React, Next, Vue and Svelte */}
         <div className="flex flex-col items-center pt-[7.5rem] md:pt-[25rem]">
           <ReactIcon className="w-[70%] animate-pulse md:w-[auto] md:h-[5.5rem] mb-[12rem] md:mb-[35.7rem] drop-shadow-white" />
           <SvelteIcon className="w-[70%] animate-pulse md:w-[auto] md:h-[5.5rem] opacity-40 drop-shadow-white" />

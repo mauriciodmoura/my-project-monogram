@@ -11,6 +11,7 @@ const JavascriptSection: React.FC = () => {
     <div className="bg-greyDark absolute w-[100vw] h-[75%] xl:h-[55%] lg:max-h-[55rem] bottom-0 left-2/4 -translate-x-2/4">
       <Lines />
     </div>
+    {/* Javascript and computer */}
     <div className="flex justify-center relative">
       <Square className="absolute z-0 blur-xs" />
       <Arrow className="absolute mt-104 ml-384" />

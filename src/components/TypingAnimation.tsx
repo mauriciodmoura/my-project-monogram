@@ -54,6 +54,7 @@ const TypingAnimation: React.FC = () => {
 
   return (
   <div className="absolute inset-0 flex justify-center mx-4 mt-2 mb-12 sm:mx-8 lg:mx-14 z-10">
+    {/* Command line and screen */}
       <div className="bg-commandScreen rounded-xl sm:rounded w-full h-full p-2 sm:p-8">
         <pre className="text-commandLine overflow-hidden my-4.5 mx-6 md:my-10 md:mx-14 lg:my-16 lg:mx-20 bg-black rounded-lg font-mono text-left text-s sm:text-md md:text-m lg:text-lg xl:text-xl">
           {text}

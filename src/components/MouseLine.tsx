@@ -9,6 +9,7 @@ const MouseLine: React.FC = () => {
   return (
     <>
       <div className="relative mt-16 ml-107">
+        {/* Mouse */}
         <Image
           src="/assets/svg/computer-mouse-scrollwheel.svg"
           alt="Mouse"
@@ -18,6 +19,7 @@ const MouseLine: React.FC = () => {
         />
       </div>
       <div className="relative -mt-6 ml-100">
+        {/* Line */}
         <Image
           src="/assets/svg/mouse-line.svg"
           alt="Line"
