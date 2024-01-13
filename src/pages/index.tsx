@@ -11,8 +11,8 @@ const Home = () => {
     return (
         <>
             <Head>
-                <title>Monogram Exercise-III</title>
-                <meta name="description" content="Monogram Exercise-III" />
+                <title>Project Monogram</title>
+                <meta name="description" content="Project Monogram Exercise-III" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <main>
