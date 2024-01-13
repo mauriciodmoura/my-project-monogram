@@ -9,24 +9,14 @@ const BackgroundLines: React.FC = () => {
         <div className="absolute h-full" style={{ width: '2px' }}>
           <Image src="/assets/svg/line.svg" alt="Line" layout="fill" objectFit="cover" />
         </div>
-        {/* second line */}
-        <div className="absolute h-full" style={{ width: '2px', left: 'calc(50% - 15%)' }}>
-          <Image src="/assets/svg/line.svg" alt="Line" layout="fill" objectFit="cover" />
-        </div>
         {/* middle line */}
         <div className="absolute left-1/2 h-full" style={{ width: '2px' }}>
           <Image src="/assets/svg/line.svg" alt="Line" layout="fill" objectFit="cover" />
         </div>
-        {/* fourth line */}
-        <div className="absolute left-1/2 h-full" style={{ width: '2px', left: 'calc(50% + 15%)' }}>
-          <Image src="/assets/svg/line.svg" alt="Line" layout="fill" objectFit="cover" />
-        </div>
         {/* last line */}
-        <div className="absolute h-full" style={{ width: '2px', left: '1580px' }}>
+        <div className="absolute h-full" style={{ width: '2px', left: '1550px' }}>
           <Image src="/assets/svg/line.svg" alt="Line" layout="fill" objectFit="cover" />
         </div>
-        {/* spacer for responsive design */}
-        <div className="absolute h-full" style={{ width: '2px', right: '5%', minWidth: 'calc(100vw - 1280px)' }} />
       </div>
     </div>
   );

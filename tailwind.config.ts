@@ -83,6 +83,7 @@ const config: Config = {
       280: '90rem',
       384: '96rem',
       432: '108rem',
+      512: '128rem',
     },
     letterSpacing: {
       'h1': '5px',
