@@ -30,6 +30,7 @@ const config: Config = {
       3: '0.75rem',
       3.5: '0.875rem',
       4: '1rem',
+      4.5: '1.125rem',
       5: '1.25rem',
       6: '1.5rem',
       7: '1.75rem',
@@ -134,8 +135,9 @@ const config: Config = {
       'title': "15rem",
     },
     borderRadius: {
-      DEFAULT: '34px',
+      DEFAULT: '62px',
       lg: '7px',
+      xl: '21px',
     },
     borderWidth: {
       DEFAULT: '1px',

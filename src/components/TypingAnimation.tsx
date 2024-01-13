@@ -53,13 +53,13 @@ const TypingAnimation: React.FC = () => {
   }, [fullText, typing]);
 
   return (
-    <div className="relative p-4 z-0">
-      <div className="bg-commandScreen rounded-lg sm:rounded w-full h-full p-2 sm:p-8">
-        <pre className="text-commandLine overflow-hidden sm:p-5 md:px-16 lg:px-8 bg-black rounded-lg font-mono text-left text-s sm:text-md md:text-m lg:text-lg xl:text-xl md:min-h-[340px] md:min-w-[490px] lg:min-h-[420px] lg:min-w-[620px]">
+  <div className="absolute inset-0 flex justify-center mx-4 mt-2 mb-12 sm:mx-8 lg:mx-14 z-10">
+      <div className="bg-commandScreen rounded-xl sm:rounded w-full h-full p-2 sm:p-8">
+        <pre className="text-commandLine overflow-hidden my-4.5 mx-6 md:my-10 md:mx-14 lg:my-16 lg:mx-20 bg-black rounded-lg font-mono text-left text-s sm:text-md md:text-m lg:text-lg xl:text-xl">
           {text}
         </pre>
-      </div>
     </div>
+  </div>
   );
 };
 

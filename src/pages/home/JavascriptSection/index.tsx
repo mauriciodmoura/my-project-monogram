@@ -30,7 +30,7 @@ const JavascriptSection: React.FC = () => {
           layout="fixed"
           className="relative"
         />
-        <div className="absolute inset-0 flex ml-4 md:ml-20 lg:ml-26 md:mt-10 lg:mt-14 -z-10">
+        <div className="absolute inset-0 flex -z-10">
           <TypingAnimation />   
         </div>
       </div>
