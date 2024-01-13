@@ -7,7 +7,7 @@ const BlockGraphic = () => {
         {/* Rectangle 22 */}
           <Image
             className="absolute mt-0 ml-130"
-            src="/assets/svg/Rectangle-22-2.svg"
+            src="/assets/svg/rectangle-22-2.svg"
             alt="Rectangle 22"
             width={278}
             height={670}
@@ -16,7 +16,7 @@ const BlockGraphic = () => {
         {/* Rectangle 23 */}
           <Image
             className="absolute mt-68 ml-0"
-            src="/assets/svg/Rectangle-23-2.svg"
+            src="/assets/svg/rectangle-23-2.svg"
             alt="Rectangle 23"
             width={280}
             height={629}
@@ -25,7 +25,7 @@ const BlockGraphic = () => {
         {/* Rectangle 24 */}
           <Image
             className="absolute mt-192 ml-64"
-            src="/assets/img/Rectangle-24.png"
+            src="/assets/img/rectangle-24.png"
             alt="Rectangle 24"
             width={280}
             height={479}
@@ -34,7 +34,7 @@ const BlockGraphic = () => {
         {/* Rectangle 25 */}
           <Image
             className="absolute mt-130 ml-192"
-            src="/assets/img/Rectangle-25.png"
+            src="/assets/img/rectangle-25.png"
             alt="Rectangle 25"
             width={280}
             height={662}

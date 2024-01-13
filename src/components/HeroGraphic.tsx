@@ -11,7 +11,7 @@ const HeroGraphic = () => {
         {/* Rectangle 22 */}
         <Image
           className="absolute mt-0 ml-130 blur-xs"
-          src="/assets/svg/Rectangle-22.svg"
+          src="/assets/svg/rectangle-22.svg"
           alt="Rectangle 22"
           width={278}
           height={670}
@@ -20,7 +20,7 @@ const HeroGraphic = () => {
         {/* Rectangle 23 */}
         <Image
           className="absolute mt-68 ml-0 blur-xs"
-          src="/assets/svg/Rectangle-23.svg"
+          src="/assets/svg/rectangle-23.svg"
           alt="Rectangle 23"
           width={280}
           height={629}
@@ -29,7 +29,7 @@ const HeroGraphic = () => {
         {/* Rectangle 24 */}
         <div className="absolute" style={{ top: `${rectangle24Y}px`, left: '164px' }}>
           <Image
-            src="/assets/svg/Rectangle-24.svg"
+            src="/assets/svg/rectangle-24.svg"
             alt="Rectangle 24"
             width={280}
             height={479}
@@ -39,7 +39,7 @@ const HeroGraphic = () => {
         {/* Rectangle 25 */}
         <div className="absolute" style={{ top: `${rectangle25Y}px`, left: '484px' }}>
           <Image
-            src="/assets/svg/Rectangle-25.svg"
+            src="/assets/svg/rectangle-25.svg"
             alt="Rectangle 25"
             width={280}
             height={662}

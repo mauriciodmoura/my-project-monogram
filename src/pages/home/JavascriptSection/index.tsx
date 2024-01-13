@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Title from '@/components/Title';
 import Arrow from '../../../../public/assets/svg/squiggly-arrow.svg';
 import Lines from '@/components/BackgroundLines';
-import Square from '../../../../public/assets/svg/Orange-square.svg'
+import Square from '../../../../public/assets/svg/orange-square.svg'
 import TypingAnimation from '@/components/TypingAnimation';
 
 const JavascriptSection: React.FC = () => {
