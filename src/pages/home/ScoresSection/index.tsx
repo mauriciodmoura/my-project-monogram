@@ -1,20 +1,19 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import ScoreIndicator from '../../../../public/assets/svg/score.svg';
 import Lines from '@/components/BackgroundLines';
 
 const ScoresSection: React.FC = () => {
   const [count, setCount] = useState<number>(0);
-
   const scoreRef = useRef<HTMLDivElement>(null);
 
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  const updateCount = () => {
+  const updateCount = useCallback(() => {
     if (count < 100) {
       setCount((prevCount) => prevCount + 1);
     }
-  };
+  }, [count]);
 
   useEffect(() => {
+    const currentRef = scoreRef.current;
     const scoreObserver = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -23,16 +22,16 @@ const ScoresSection: React.FC = () => {
       });
     });
 
-    if (scoreRef.current) {
-      scoreObserver.observe(scoreRef.current);
+    if (currentRef) {
+      scoreObserver.observe(currentRef);
     }
 
     return () => {
-      if (scoreRef.current) {
-        scoreObserver.unobserve(scoreRef.current);
+      if (currentRef) {
+        scoreObserver.unobserve(currentRef);
       }
     };
-  }, [count, updateCount]);
+  }, [updateCount]);
 
   return (
     <section className="flex flex-col items-center bg-greyDark relative mb">

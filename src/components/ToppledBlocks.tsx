@@ -5,6 +5,7 @@ const ToppledBlocks: React.FC = () => {
   const [scrollEffect, setScrollEffect] = useState(0);
 
   useEffect(() => {
+    const currentRef = ref.current;
     const observer = new IntersectionObserver(
       (entries) => {
         const entry = entries[0];
@@ -12,14 +13,14 @@ const ToppledBlocks: React.FC = () => {
       },
       { threshold: 0.1 }
     );
-
-    if (ref.current) {
-      observer.observe(ref.current);
+  
+    if (currentRef) {
+      observer.observe(currentRef);
     }
-
+  
     return () => {
-      if (ref.current) {
-        observer.unobserve(ref.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
